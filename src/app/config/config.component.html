@@ -1,4 +1,23 @@
-<div *ngFor = 'let listWork of listWork'>
-  {{listWork.id}} : {{listWork.workName}}
+<div id = "mid"> Type to add your work:
+  <input #input1 (keyup.enter) = "addWork(input1.value, input2.value, input3.value)" placeholder="Id...">
+  <input #input2 (keyup.enter) = "addWork(input1.value, input2.value, input3.value)" placeholder="Work Name...">
+  <input #input3 (keyup.enter) = "addWork(input1.value, input2.value, input3.value)" placeholder="Is Completed...">
+
+  <p></p>
+
+  <button (click) = "addWork(input1.value, input2.value, input3.value)">Add Work</button>
+  <button (click) = "fixWork(selectedWork, input2.value, input3.value)">Fix Work</button>
+  <button (click) = "delWork(selectedWork)" >Del Work</button>
 </div>
+
+
+
+
+<ul>
+  <li *ngFor = 'let listWork of listWork' (click) = "onSelect(listWork)" id="midtext">
+    {{listWork.id}} : {{listWork.workName}}: ________________ {{listWork.isCompleted}}
+  </li>
+</ul>
+
+
 
