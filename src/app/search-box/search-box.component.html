@@ -1,7 +1,7 @@
 <div class="divs">
 <label>Search Box</label>
 
-<input class="inputs" [(ngModel)] = searchText placeholder = "Type the work name you want to search" (keyup.enter) = "search(searchText)" (keyup.enter) = "searchText=''">
+<input class="inputs" [(ngModel)] = searchText placeholder = "Type the work name you want to search" (input) = "search(searchText)" (keyup.enter) = "search(searchText)" (keyup.enter) = "searchText=''">
 
 <div *ngIf = "searchTextExist == true">
   <ul class="uls">
