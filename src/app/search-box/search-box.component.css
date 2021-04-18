@@ -52,3 +52,7 @@ label {
   text-align: center; /*Text bên trong canh giữa*/
   font-size: 20px;    /*Font chữ 30px*/
 }
+
+a {
+  text-decoration: none;
+}

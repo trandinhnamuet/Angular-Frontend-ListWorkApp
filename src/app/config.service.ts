@@ -17,6 +17,14 @@ export class ConfigService {
     //return this.http.get(this.configUrl);
   }
 
+  getWork(id: number): Observable<Work> {
+    this.urlLink = 'https://localhost:44337/api/Works' + id;
+    console.log('___________');
+    console.log(this.urlLink);
+    console.log('__________');
+    return this.http.get<Work>(this.urlLink);
+  }
+
   getWorks(): Observable<Work[]> {
     console.log("work getting");
     return this.http.get<Work[]>('https://localhost:44337/api/Works');
