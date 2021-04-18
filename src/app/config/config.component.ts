@@ -1,10 +1,7 @@
-import { HttpClient } from '@angular/common/http';
-import { AfterContentChecked, Component, DoCheck, OnChanges, OnInit} from '@angular/core';
-import { Config } from 'protractor';
+import { Component, OnInit} from '@angular/core';
 import { ConfigService } from '../config.service';
 import { Work } from '../work';
-import { Observable } from 'rxjs';
-import { worker } from 'cluster';
+
 
 
 @Component({
@@ -14,14 +11,14 @@ import { worker } from 'cluster';
   styleUrls: ['./config.component.css']
 })
 
-export class ConfigComponent  implements OnInit{
+export class ConfigComponent implements OnInit{
 
   listWork: Work[] = [];
   result: string;
   newWork: Work;
   selectedWork: Work;
   selected : boolean = false;
-  constructor(private http: HttpClient, private configService : ConfigService) {
+  constructor(private configService : ConfigService) {
 
   }
 

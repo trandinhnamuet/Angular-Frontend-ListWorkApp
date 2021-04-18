@@ -1,0 +1,14 @@
+<div class="divs">
+<label>Search Box</label>
+
+<input class="inputs" [(ngModel)] = searchText placeholder = "Type the work name you want to search" (keyup.enter) = "search(searchText)" (keyup.enter) = "searchText=''">
+
+<div *ngIf = "searchTextExist == true">
+  <ul class="uls">
+    <li class = "lis" *ngFor = 'let listWorkSearch of listWorkSearch'>
+      {{listWorkSearch.id}}: {{listWorkSearch.workName}}: {{listWorkSearch.isCompleted}};
+    </li>
+  </ul>
+
+</div>
+</div>

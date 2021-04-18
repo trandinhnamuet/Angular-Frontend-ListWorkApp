@@ -1,0 +1,54 @@
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.inputs {
+  width: 90%;
+  max-width: 600px;
+  height: 32px;
+  font-size: 21px;
+}
+.buttons {
+  height: 32px;
+  width: 90px;
+  font-size: 17px;
+}
+
+.lis {
+  margin: 0px auto;   /*Canh giữa màn hình*/
+  text-align: center; /*Text bên trong canh giữa*/
+
+  cursor: pointer;
+  list-style-type: none;
+
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+
+  width: 100%;
+  max-width: 600px;
+  padding: .5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  background: #99FFFF;
+}
+
+.lis:hover {
+  background-color: #435A60;
+  color: white;
+}
+
+.uls {
+  margin-top: 0;
+  padding-left: 0;
+}
+.divs {
+  margin: 0px auto;   /*Canh giữa màn hình*/
+  text-align: center; /*Text bên trong canh giữa*/
+  font-size: 20px;    /*Font chữ 30px*/
+}

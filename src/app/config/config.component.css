@@ -1,0 +1,51 @@
+li{
+  cursor: pointer;
+  position: relative;
+  left: -60px;
+  background-color: #EEE;
+  margin: 6px;
+  padding: 4px;
+  border-radius: 4px;
+
+  height: 18px;
+  width: 600px;
+
+  list-style-type:none;
+}
+
+li:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+  left: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mid{
+  width: 1000px;      /*Rộng 1000px*/
+  margin: 0px auto;   /*Canh giữa màn hình*/
+  text-align: center; /*Text bên trong canh giữa*/
+  font-size: 20px;    /*Font chữ 30px*/
+
+}
+#midtext{
+  margin-left: 700px;
+  font-size: 20px;    /*Font chữ 30px*/
+
+  cursor: pointer;
+  border-radius: 4px;
+}
